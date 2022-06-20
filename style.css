@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: yellow;
+    --white: #fff;
+    --black: #000;
+    --dark-color: #030303;
+    --grey: #e6e6e6;
+    --hover-clr: #4c9e9e;
+    --teal-clr: teal;
+    --card-clr: #ffe967;
+    --card-body-light-grey-clr-1: rgba(0,0,0,.1);
+    --card-body-light-grey-clr-2: rgba(0,0,0,.2);
+    --card-body-light-grey-clr-3: rgba(0,0,0,.3);
+    --body-font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    font-family: var(--body-font-family);
+}
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+    outline: none !important;
+    font-weight: lighter;
+} 
+a:hover{
+    text-decoration: none;
+}
+ li{
+    list-style: none;
+}
+button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+form{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 1.6rem;
+    color: var(--dark-color);
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+/* NAVBAR STYLING STARTS */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--grey);
+    color: black;
+   }
+   .header-links a {
+    color: var(--black);
+    text-decoration: none;
+   }
+   /* LOGO */
+   /* .logo{
+    background-color: red;
+   } */
+   .logo-button {
+    background-color:var(--black); /* Green */
+    border: none;
+    border-radius: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 30px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+  /* hero */
+  .hero-section{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-section .info span{
+    color: var(--primary-color);
+  }
+  .hero-section .info h1{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .hero-section .info h6{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  .hero-image{
+    max-width: 600px;
+    height: 400px;
+  }
+  .hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .btn-sign-up{
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--dark-color);
+    padding: 1rem 4rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    font-size: 3.5rem;
+    transition: .5s ease;
+  }
+  .btn-sign-up:hover{
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+  }
+  .card-tray{
+    margin-top: 5rem;
+  }
+  /* hero XX */
+  /* Services */
+  .services{
+    padding-top: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .card-body .post-title{
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .card-body p{
+    font-size: 1.8rem;
+  }
+  /* services */
+  /* Why-us */
+  .why-us{
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .card-body-light-clr{
+    background-color: var(--card-clr) !important;
+  }
+  .card-body-light-grey-clr-1{
+    background-color: var(--card-body-light-grey-clr-1) !important;
+  }
+  .card-body-light-grey-clr-2{
+    background-color: var(--card-body-light-grey-clr-2) !important;
+  }
+  .card-body-light-grey-clr-3{
+    background-color: var(--card-body-light-grey-clr-3) !important;
+  }
+  .post-card{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  /* Why-us X */
+  /* footer */
+   .footer{
+     background-color: var(--teal-clr); 
+     margin-top: 5rem; 
+   }
+   .newsletter-block h2{
+       color: var(--white);
+   }
+   .newsletter-block h4{
+    color: var(--white);
+   }
+  
+.text-center p{
+    color: var(--white);
+   }
+   /* .container h3{
+       color: black;
+   } */
+   .row{
+       padding-top: 30px;
+       padding-bottom: 50px;
+   }
+   .card-tray{
+       background-color: var(--primary-color);
+       margin-top: 100px;
+   }
+   .card-body{
+       background-color: var(--white);
+       
+      
+   }
+   .card-body p {
+       padding: 40px 20px;
+   }
+   .card-body h3{
+       padding-top: 20px;
+   }
+   /* .info h1{
+
+   } */
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   .section-content{
+    position: relative;
+    padding-left: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+   .section-text h2{
+       padding-top: 80px;
+       display: inline-block;
+       margin: 0;
+       height: 35px;
+       color: var(--dark-color);
+       font-size: 50px;
+       font-weight: 600;
+   }
+   .section-title {
+      margin-top: 2rem;
+   }
+  
+
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:var(--teal-clr);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color: var(--teal-clr);
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: var(--hover-clr);
+   }
+   }
